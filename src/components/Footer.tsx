@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
               Portfolio
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-            A showcase of my knowledge, practical skills, and experience in cybersecurity at the entry level..
+            A showcase of my knowledge, practical skills, and experience in cybersecurity at the entry level.
             </p>
           </div>
           <div>

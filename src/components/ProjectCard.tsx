@@ -1,6 +1,6 @@
-import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
-import { Project } from '../types';
+import React from "react";
+import { ExternalLink, Github } from "lucide-react";
+import { Project } from "../types";
 
 interface ProjectCardProps {
   project: Project;
@@ -58,7 +58,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </span>
           ))}
         </div>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          {project.description}
+        </p>
         <div className="flex justify-between items-center pt-4">
           <div className="flex space-x-3">
             {project.githubUrl && (
@@ -84,12 +86,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </a>
             )}
           </div>
-          <a
-            href={`#project-${project.id}`}
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-sm font-medium transition-colors duration-300"
-          >
-            Learn More
-          </a>
         </div>
       </div>
     </div>
